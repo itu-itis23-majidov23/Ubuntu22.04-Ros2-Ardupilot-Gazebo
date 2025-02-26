@@ -1,4 +1,3 @@
-````markdown name=README.md
 # Ubuntu 22.04 - ROS 2 Humble - ArduPilot - Gazebo Setup Guide
 
 This guide provides step-by-step instructions to set up ROS 2 Humble, ArduPilot, and Gazebo Harmonic on Ubuntu 22.04 for drone simulation.
