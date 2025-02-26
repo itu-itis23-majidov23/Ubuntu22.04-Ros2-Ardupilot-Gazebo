@@ -78,6 +78,9 @@ Source the ROS 2 setup script to configure your environment.
 # Replace ".bash" with your shell if you're not using bash
 # Possible values are: setup.bash, setup.sh, setup.zsh
 source /opt/ros/humble/setup.bash
+
+# Add to bash file
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 ```
 
 ## 5. Test ROS 2 Installation
