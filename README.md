@@ -120,6 +120,7 @@ vcs import --recursive --input https://raw.githubusercontent.com/ArduPilot/ardup
 ```sh
 cd ~/ardu_ws
 sudo apt update
+sudo rosdep init
 rosdep update
 source /opt/ros/humble/setup.bash
 rosdep install --from-paths src --ignore-src -r -y
@@ -141,6 +142,7 @@ echo "export PATH=\$PATH:$PWD/scripts" >> ~/.bashrc
 
 ```sh
 source ~/.bashrc
+cd
 microxrceddsgen -help
 ```
 
@@ -156,6 +158,7 @@ python3 -m pip install --user pexpect
 python3 -m pip install --user future
 colcon build --packages-up-to ardupilot_dds_tests  # Repeat until no failures
 source ./install/setup.bash
+cd
 ```
 
 ## 8. Launch ArduPilot SITL
@@ -163,6 +166,7 @@ source ./install/setup.bash
 Launch the ArduPilot SITL simulation.
 
 ```sh
+source /opt/ros/humble/setup.bash # You don't have to source everytime if you have added to bash file 
 cd ~/ardu_ws
 colcon build --packages-up-to ardupilot_sitl
 source install/setup.bash
