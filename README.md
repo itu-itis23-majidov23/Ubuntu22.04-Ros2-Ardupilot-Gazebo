@@ -154,6 +154,7 @@ Build the ROS 2 workspace.
 cd ~/ardu_ws
 colcon build --packages-up-to ardupilot_dds_tests
 colcon build --packages-up-to ardupilot_dds_tests --event-handlers=console_cohesion+
+sudo apt install python3-pip
 python3 -m pip install --user pexpect
 python3 -m pip install --user future
 colcon build --packages-up-to ardupilot_dds_tests  # Repeat until no failures
