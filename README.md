@@ -236,21 +236,10 @@ colcon build --packages-up-to ardupilot_gz_bringup
 If the build fails, install missing dependencies:
 
 ```sh
-sudo apt install libgz-cmake3-dev libgz-common5-dev libgz-sim7-dev libgz-math7-dev libgz-msgs9-dev libgz-transport12-dev libgz-tools2-dev libgz-utils2-dev
-sudo apt update
-sudo apt install gz-cmake
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl -y
 curl -sSL https://get.gazebosim.org | sh
 sudo apt install gz-cmake3
-pip install gz-cmake3
-sudo apt install python3-vcstool python3-colcon-common-extensions git wget
-colcon build --cmake-args -DBUILD_TESTING=ON
-cd ~/ardu_ws/
-colcon build --cmake-args -DBUILD_TESTING=ON
-sudo apt update
-sudo apt install libgz-cmake3-dev libgz-common5-dev libgz-sim8-dev libgz-math7-dev libgz-msgs10-dev libgz-transport13-dev libgz-tools2-dev libgz-utils2-dev
-gz sim --version
 colcon build --packages-up-to ardupilot_gz_bringup
 ```
 
