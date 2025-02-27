@@ -239,6 +239,7 @@ If the build fails, install missing dependencies:
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl -y
 curl -sSL https://get.gazebosim.org | sh
+sudo apt install libgz-cmake3-dev libgz-common5-dev libgz-sim8-dev libgz-math7-dev libgz-msgs10-dev libgz-transport13-dev libgz-tools2-dev libgz-utils2-dev
 sudo apt install gz-cmake3
 colcon build --packages-up-to ardupilot_gz_bringup
 ```
